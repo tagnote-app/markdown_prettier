@@ -1,0 +1,22 @@
+>>> #1
+ ```dart
+var foo = 'bar';
+  ```
+<<<
+```dart
+var foo = 'bar';
+```
+>>> #2
+Bar
+ ```dart
+var foo = 'bar';
+  ```
+Biz
+<<<
+Bar
+
+```dart
+var foo = 'bar';
+```
+
+Biz
