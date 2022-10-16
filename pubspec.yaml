@@ -1,6 +1,7 @@
 name: markdown_prettier
-description: A markdown prettier library written in Dart.
-version: 0.1.0-dev
+description: A Markdown prettier library written in Dart.
+version: 0.1.0-alpha
+repository: https://github.com/tagnote-app/markdown_prettier
 
 environment:
   sdk: '>=2.18.2 <3.0.0'
