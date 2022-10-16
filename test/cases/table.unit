@@ -1,0 +1,67 @@
+>>> # 1
+Name|Age
+--:|:---:
+Foo|2
+<<<
+| Name | Age |
+| ---: | :-: |
+|  Foo |  2  |
+>>> https://github.github.com/gfm/#example-198
+| foo | bar |
+| --- | --- |
+| baz | bim |
+<<<
+| foo | bar |
+| --- | --- |
+| baz | bim |
+>>> https://github.github.com/gfm/#example-199
+| abc | defghi |
+:-: | -----------:
+bar | baz
+<<<
+| abc | defghi |
+| :-: | -----: |
+| bar |    baz |
+>>> https://github.github.com/gfm/#example-200
+| f\|oo  |
+| ------ |
+| b `\|` az |
+| b **\|** im |
+<<<
+| f\|oo       |
+| ----------- |
+| b `\|` az   |
+| b **\|** im |
+>>> https://github.github.com/gfm/#example-201
+| abc | def |
+| --- | --- |
+| bar | baz |
+> bar
+<<<
+| abc | def |
+| --- | --- |
+| bar | baz |
+
+> bar
+>>> https://github.github.com/gfm/#example-202
+| abc | def |
+| --- | --- |
+| bar | baz |
+bar
+
+bar
+<<<
+| abc | def |
+| --- | --- |
+| bar | baz |
+| bar |     |
+
+bar
+>>> https://github.github.com/gfm/#example-203
+| abc | def |
+| --- |
+| bar |
+<<<
+| abc | def |
+| --- |
+| bar |

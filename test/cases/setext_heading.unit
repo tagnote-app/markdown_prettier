@@ -1,0 +1,178 @@
+>>> https://spec.commonmark.org/0.30/#example-80
+Foo *bar*
+=========
+
+Foo *bar*
+---------
+<<<
+Foo *bar*
+=========
+
+Foo *bar*
+---------
+>>> https://spec.commonmark.org/0.30/#example-81
+Foo *bar
+baz*
+====
+<<<
+Foo *bar
+baz*
+====
+>>> https://spec.commonmark.org/0.30/#example-82
+  Foo *bar
+baz*  
+====
+<<<
+Foo *bar
+baz*
+====
+>>> https://spec.commonmark.org/0.30/#example-83
+Foo
+-------------------------
+
+Foo
+=
+<<<
+Foo
+-------------------------
+
+Foo
+===
+>>> https://spec.commonmark.org/0.30/#example-84
+   Foo
+---
+
+  Foo
+-----
+
+  Foo
+  ===
+<<<
+Foo
+---
+
+Foo
+-----
+
+Foo
+===
+>>> https://spec.commonmark.org/0.30/#example-85
+    Foo
+    ---
+
+    Foo
+---
+<<<
+    Foo
+    ---
+    
+    Foo
+
+---
+>>> https://spec.commonmark.org/0.30/#example-86
+Foo
+   ----      
+<<<
+Foo
+----
+>>> https://spec.commonmark.org/0.30/#example-87
+Foo
+    ---
+<<<
+Foo
+    ---
+>>> https://spec.commonmark.org/0.30/#example-88
+Foo
+= =
+
+Foo
+--- -
+<<<
+Foo
+= =
+
+Foo
+
+--- -
+>>> https://spec.commonmark.org/0.30/#example-89
+Foo  
+-----
+<<<
+Foo
+-----
+>>> https://spec.commonmark.org/0.30/#example-90
+Foo\
+----
+<<<
+Foo\
+----
+>>> https://spec.commonmark.org/0.30/#example-91
+`Foo
+----
+`
+
+<a title="a lot
+---
+of dashes"/>
+<<<
+`Foo
+----
+
+`
+
+<a title="a lot
+---
+
+of dashes"/>
+>>> https://spec.commonmark.org/0.30/#example-92
+> Foo
+---
+<<<
+> Foo
+
+---
+>>> https://spec.commonmark.org/0.30/#example-93
+> foo
+bar
+===
+<<<
+> foo
+> bar
+>     ===
+>>> https://spec.commonmark.org/0.30/#example-94
+- Foo
+---
+<<<
+- Foo
+
+---
+>>> https://spec.commonmark.org/0.30/#example-95
+Foo
+Bar
+---
+<<<
+Foo
+Bar
+---
+>>> https://spec.commonmark.org/0.30/#example-96
+---
+Foo
+---
+Bar
+---
+Baz
+<<<
+---
+
+Foo
+---
+
+Bar
+---
+
+Baz
+>>> https://spec.commonmark.org/0.30/#example-97
+
+====
+<<<
+====
