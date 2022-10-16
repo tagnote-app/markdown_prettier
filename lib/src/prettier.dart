@@ -23,7 +23,7 @@ import 'transformer.dart';
 extension MarkdownPrettierExtensions on List<Node> {
   /// Parse to pretty Markdown string.
   String pretty({List<MarkdownBuilder>? builders}) {
-    return MarkdownPrettier(builders: builders ?? []).parse(this);
+    return MarkdownPrettier(builders: builders ?? []).parseNodes(this);
   }
 }
 
@@ -58,7 +58,15 @@ class MarkdownPrettier implements PrettyNodeVisitor {
   final _builders = <String, MarkdownBuilder>{};
   final _tree = <_TreeElement>[];
 
-  String parse(List<Node> nodes) {
+  /// Parses the given string [text].
+  String parse(String text) {
+    final nodes = Markdown().parse(text);
+
+    return parseNodes(nodes);
+  }
+
+  /// Parses the given AST [nodes] and outputs a string.
+  String parseNodes(List<Node> nodes) {
     _tree
       ..clear()
       ..add(_TreeElement());
@@ -67,11 +75,6 @@ class MarkdownPrettier implements PrettyNodeVisitor {
       node.accept(this);
     }
 
-    /*
-    print(
-      _tree.single.children.map((e) => e.toMap()).toList().toPrettyString(),
-    );
-    */
     return _prettyNodesToString(_tree.single.children);
   }
 
